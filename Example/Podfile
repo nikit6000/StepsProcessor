@@ -2,6 +2,8 @@ use_frameworks!
 
 platform :ios, '9.0'
 
+source "git@github.com:nikit6000/podspecs.git"
+
 target 'StepsProcessor_Example' do
   pod 'StepsProcessor', :path => '../'
 

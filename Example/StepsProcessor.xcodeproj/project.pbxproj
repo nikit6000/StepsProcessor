@@ -14,6 +14,8 @@
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
+		C142AAA6280B5B3E00878958 /* RawInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = C142AAA5280B5B3E00878958 /* RawInput.swift */; };
+		C142AAA8280B5F5B00878958 /* RawInput.json in Resources */ = {isa = PBXBuildFile; fileRef = C142AAA7280B5F5B00878958 /* RawInput.json */; };
 		E309596A3807F6DC2AF2BAB9 /* Pods_StepsProcessor_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB4BBF9580356EFEC45F981E /* Pods_StepsProcessor_Tests.framework */; };
 /* End PBXBuildFile section */
 
@@ -28,7 +30,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		08D7B3A19E8215E7F20E086B /* StepsProcessor.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = StepsProcessor.podspec; path = ../StepsProcessor.podspec; sourceTree = "<group>"; };
+		08D7B3A19E8215E7F20E086B /* StepsProcessor.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = StepsProcessor.podspec; path = ../StepsProcessor.podspec; sourceTree = "<group>"; };
 		2258B2CC80B36766B597F09B /* Pods-StepsProcessor_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StepsProcessor_Tests.release.xcconfig"; path = "Target Support Files/Pods-StepsProcessor_Tests/Pods-StepsProcessor_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		5228BA93A47F0F502B27EF5C /* Pods-StepsProcessor_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StepsProcessor_Tests.debug.xcconfig"; path = "Target Support Files/Pods-StepsProcessor_Tests/Pods-StepsProcessor_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* StepsProcessor_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StepsProcessor_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -41,11 +43,13 @@
 		607FACE51AFB9204008FA782 /* StepsProcessor_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StepsProcessor_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
-		69AAB50B52A48529F01CFA25 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		69AAB50B52A48529F01CFA25 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		C142AAA5280B5B3E00878958 /* RawInput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RawInput.swift; sourceTree = "<group>"; };
+		C142AAA7280B5F5B00878958 /* RawInput.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = RawInput.json; sourceTree = "<group>"; };
 		C3A8D488C3DD5B01620F5146 /* Pods_StepsProcessor_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StepsProcessor_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB2A89BD237228CCD7F9E112 /* Pods-StepsProcessor_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StepsProcessor_Example.release.xcconfig"; path = "Target Support Files/Pods-StepsProcessor_Example/Pods-StepsProcessor_Example.release.xcconfig"; sourceTree = "<group>"; };
 		DB4BBF9580356EFEC45F981E /* Pods_StepsProcessor_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StepsProcessor_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		E68616675624A00711E9187C /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		E68616675624A00711E9187C /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		F927DD800049D18650268EC5 /* Pods-StepsProcessor_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StepsProcessor_Example.debug.xcconfig"; path = "Target Support Files/Pods-StepsProcessor_Example/Pods-StepsProcessor_Example.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -77,7 +81,6 @@
 				5228BA93A47F0F502B27EF5C /* Pods-StepsProcessor_Tests.debug.xcconfig */,
 				2258B2CC80B36766B597F09B /* Pods-StepsProcessor_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -105,6 +108,8 @@
 		607FACD21AFB9204008FA782 /* Example for StepsProcessor */ = {
 			isa = PBXGroup;
 			children = (
+				C142AAA7280B5F5B00878958 /* RawInput.json */,
+				C142AAA5280B5B3E00878958 /* RawInput.swift */,
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
 				607FACD71AFB9204008FA782 /* ViewController.swift */,
 				607FACD91AFB9204008FA782 /* Main.storyboard */,
@@ -227,6 +232,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -249,6 +255,7 @@
 				607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */,
 				607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */,
 				607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */,
+				C142AAA8280B5F5B00878958 /* RawInput.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -291,10 +298,12 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-StepsProcessor_Example/Pods-StepsProcessor_Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/FiltFilt/FiltFilt.framework",
 				"${BUILT_PRODUCTS_DIR}/StepsProcessor/StepsProcessor.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FiltFilt.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/StepsProcessor.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -331,6 +340,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C142AAA6280B5B3E00878958 /* RawInput.swift in Sources */,
 				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
 			);
